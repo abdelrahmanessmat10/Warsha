@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Warsha - Home Page Layout Styles
+   ========================================================================== */
+
+.home-layout {
+  min-height: 100vh;
+  background-color: #0d0b0f;
+  color: #fbf8f6;
+  display: flex;
+  flex-direction: column;
+}
