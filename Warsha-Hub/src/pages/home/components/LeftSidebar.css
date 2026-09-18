@@ -3,9 +3,18 @@
    ========================================================================== */
 
 .left-sidebar {
+  position: sticky;
+  top: 80px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.left-sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 /* 1. Profile Brief Card */
