@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Warsha - Middle Feed & Posts Styles (Simple & Clean)
+   ========================================================================== */
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 1. Create Post Card */
+.create-post-card {
+  background: rgba(23, 19, 25, 0.85);
+  border: 1px solid rgba(224, 185, 132, 0.15);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.create-post-top {
+  display: flex;
+  gap: 12px;
+}
+
+.create-post-avatar,
+.post-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid rgba(224, 185, 132, 0.25);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.create-post-input {
+  flex: 1;
+  background: rgba(14, 11, 16, 0.7);
+  border: 1px solid rgba(224, 185, 132, 0.15);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #fbf8f6;
+  font-family: inherit;
+  font-size: 14px;
+  resize: none;
+}
+
+.create-post-input:focus {
+  outline: none;
+  border-color: #a32d4e;
+}
+
+.create-post-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(224, 185, 132, 0.08);
+}
+
+.create-post-tools {
+  display: flex;
+  gap: 14px;
+}
+
+.tool-btn {
+  background: none;
+  border: none;
+  color: #8e818a;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.tool-btn:hover {
+  color: #e0b984;
+}
+
+.btn-submit-post {
+  background: #801a35;
+  color: #fbf8f6;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-submit-post:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-submit-post:not(:disabled):hover {
+  background: #a32d4e;
+}
+
+/* 2. Post Card */
+.post-card {
+  background: rgba(23, 19, 25, 0.85);
+  border: 1px solid rgba(224, 185, 132, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.post-author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-author-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fbf8f6;
+}
+
+.post-meta {
+  font-size: 12px;
+  color: #8e818a;
+}
+
+.post-menu-btn {
+  background: none;
+  border: none;
+  color: #8e818a;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.post-menu-btn:hover {
+  color: #ef4444;
+}
+
+.post-body {
+  margin-bottom: 14px;
+}
+
+.post-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e6dfd5;
+}
+
+/* 3. Post Actions */
+.post-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(224, 185, 132, 0.08);
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #8e818a;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-btn:hover {
+  color: #fbf8f6;
+}
+
+.action-btn.liked {
+  color: #a32d4e;
+  font-weight: 700;
+}
+
+/* 4. Comments Section */
+.post-comments-section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(224, 185, 132, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-bubble {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.comment-avatar,
+.comment-form-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment-body {
+  background: rgba(14, 11, 16, 0.7);
+  border: 1px solid rgba(224, 185, 132, 0.08);
+  border-radius: 12px;
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.comment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.comment-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fbf8f6;
+}
+
+.comment-time {
+  font-size: 11px;
+  color: #8e818a;
+}
+
+.comment-text {
+  font-size: 13px;
+  color: #c4b8c0;
+}
+
+.comment-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  background: rgba(14, 11, 16, 0.7);
+  border: 1px solid rgba(224, 185, 132, 0.15);
+  border-radius: 9999px;
+  padding: 8px 14px;
+  color: #fbf8f6;
+  font-size: 13px;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #a32d4e;
+}
+
+.comment-submit-btn {
+  background: #801a35;
+  color: #fbf8f6;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.comment-submit-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

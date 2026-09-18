@@ -1,5 +1,6 @@
 import { Header } from './components/Header';
 import { LeftSidebar } from './components/LeftSidebar';
+import { Feed } from './components/Feed';
 import './Home.css';
 
 export function Home() {
@@ -8,7 +9,8 @@ export function Home() {
       <Header />
       <main className="home-content-container">
         <LeftSidebar />
-        {/* Center Feed and Right Sidebar will be slotted here next */}
+        <Feed />
+        {/* Right Sidebar will be slotted here next */}
       </main>
     </div>
   );
